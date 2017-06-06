@@ -2,7 +2,23 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.post('/tasks', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.get('/tasks', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.get('/tasks:id', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.put('/tasks:id', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.delete('/tasks:id', (req, res) => {
   res.send('Hello World!');
 });
 
