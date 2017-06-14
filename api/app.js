@@ -7,11 +7,11 @@ const tasks = [];
 const generatedId = (arr) => arr.length + 1;
 
 app.post('/tasks', (req, res) => {
-  res.send('Hello World!');
+  res.send('Got a POST request');
 });
 
 app.get('/tasks', (req, res) => {
-  res.send('Hello World!');
+  res.send('Got a GET request');
 });
 
 app.get('/tasks/:id/:name/:time/:descr', (req, res) => {
@@ -25,11 +25,11 @@ app.get('/tasks/:id/:name/:time/:descr', (req, res) => {
 });
 
 app.put('/tasks/:id', (req, res) => {
-  res.send('Hello World!');
+  res.send('Got a PUT request at /tasks');
 });
 
 app.delete('/tasks/:id', (req, res) => {
-  res.send('Hello World!');
+  res.send('Got a DELETE request at /tasks');
 });
 
 app.listen(3000, () => {
